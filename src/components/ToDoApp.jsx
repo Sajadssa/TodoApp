@@ -7,8 +7,14 @@ import TodoList from "./ToDoList";
 const TodoApp = () => {
     //state global called name:todos
     const [todos, setTodos] = useState([]);
+  
+    const addToHandlers = (todo) => {
+        console.log(todo);
+    }
+
     return (<div className="container">todos
-        <TodoForm /> 
+        {/* هنگام رندر کردن کامپوننت بچه بایستی پارامتری را که برایش تعریف کردیم رو در اینجا بش پاس بدیم */}
+        <TodoForm addToHandlers={addToHandlers}  /> 
         {/* IN COMPONENT TODOFORM UPDATE STATE AND IN TODOLIST MAKE MAP METHOD */}
         <TodoList/>
        
