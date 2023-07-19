@@ -8,8 +8,19 @@ const TodoApp = () => {
     //state global called name:todos
     const [todos, setTodos] = useState([]);
   
-    const addToHandlers = (todo) => {
-        console.log(todo);
+    const addToHandlers = (input) => {
+        // console.log(todo);
+        const newTodo = {
+            id: Math.floor(Math.random() * 1000),
+        
+            text: input,
+            iscompleted: false,
+        };
+        
+            
+    
+   /*  todos اضافه کردن به */
+    setTodos([...todos, newTodo]);
     }
 
     return (<div className="container">todos

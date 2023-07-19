@@ -1,8 +1,8 @@
 const ToDoList = () => {
     return ( 
         <div>
-           {/*  //render todolist */}
-            todoList{/*  */}
+       
+            todoList 
         </div>
      )
 }
