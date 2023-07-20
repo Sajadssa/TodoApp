@@ -1,11 +1,11 @@
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-  outline:none;
-  text-decoration:none;
-}
-
+/* *{ */
+  /* box-sizing:border-box; */
+  /* margin:0; */
+  /* padding:0; */
+  /* outline:none; */
+  /* text-decoration:none; */
+/* } */
+/*  */
 
 .App {
   text-align: center;
@@ -18,38 +18,27 @@
   border-radius:.5rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   justify-content: center;
-  font-size:1rem;
+ 
    border:1px solid #bdbcbc;
-  padding:1rem;
-  width:50%;
-  margin:10px auto;
+ 
+  width:40rem;
+ 
+ 
   
  
 }
 
-.container input{
-  padding:.5rem;
-  border-radius:.5rem;
-  margin-right:10px;
-  border:none;
-  background-color:rgba(173, 165, 165, 0.2);
-  outline:none;
-  transition:.4s;
 
- 
-}
-.container input:active{
-  border:1px solid rgba(104, 18, 225, 0.829);
-}
-button{
-  padding:.5rem;
-  border:none;
-  border-radius:.5rem;
-  font-size:.85rem;
-  background-color:rgba(104, 18, 225, 0.829);
-  color:#fff;
+
+
+.todo{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20rem;
+  margin: 10px;
   
 }
-

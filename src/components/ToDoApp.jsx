@@ -22,12 +22,16 @@ const TodoApp = () => {
    /*  todos اضافه کردن به */
     setTodos([...todos, newTodo]);
     }
+    // نوشتن هندلر برای onComplete  این پراپس به کامپوننت todolist داده میشه چون این کامپوننت  استیت کامپوننت پدر را تغییر می دهد یعنی todos ها رو تغییر می دهد
+    const onCompleteHandler = (id) => {
+        console.log(id);
+    }
 
     return (<div className="container">todos
         {/* هنگام رندر کردن کامپوننت بچه بایستی پارامتری را که برایش تعریف کردیم رو در اینجا بش پاس بدیم */}
         <TodoForm addToHandlers={addToHandlers}  /> 
         {/* IN COMPONENT TODOFORM UPDATE STATE AND IN TODOLIST MAKE MAP METHOD */}
-        <TodoList/>
+        <TodoList todos={todos} onComplete={onCompleteHandler} />
        
 
     </div>
