@@ -9,7 +9,7 @@ const Todo = ({ todo,onComplete }) => {
             <div>{todo.text}</div>
 
             <div>
-                <button>Edit</button>
+                <button >Edit</button>
                 <button onClick={onComplete}>Complete</button>
             </div>
             
